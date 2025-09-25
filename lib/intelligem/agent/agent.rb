@@ -24,7 +24,7 @@ module Intelligem
           Intelligem::Agent::Tools::ListFiles,
           Intelligem::Agent::Tools::EditFile,
           Intelligem::Agent::Tools::FetchUrl,
-          # Intelligem::Agent::Tools::RunShellCommand
+          Intelligem::Agent::Tools::RunShellCommand
         )
 
         CLI::UI.puts "Chat with the agent. Type 'exit' to quit"
