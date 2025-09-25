@@ -2,7 +2,7 @@
 
 A local CLI agent written in Ruby that can be used for coding, analysis, etc.
 
-Written in Ruby, this project aims to illustrate, once again ... how Ruby shines.
+This project aims to illustrate, once again ... how Ruby shines.
 
 ## Setup
 
