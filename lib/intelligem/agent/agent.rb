@@ -36,13 +36,21 @@ module Intelligem
 
 
           begin
+            last_was_content = false
+
             @chat.ask(user_input) do |chunk|
               CLI::UI.raw do
-                $stdout.write(chunk.content) unless chunk.content.nil?
+                if chunk.content && !chunk.content.empty?
+                  $stdout.write(chunk.content)
+                  last_was_content = true
+                elsif chunk.tool_calls&.any? && last_was_content
+                  # Add newline before tool call if we just printed content
+                  CLI::UI.puts ""
+                  last_was_content = false
+                end
               end
-              # print chunk.content unless chunk.content.nil?
             end
-            puts "" # New line after response
+
           rescue => e
             CLI::UI.puts "{{red:Error: #{e.message}}}"
             CLI::UI.puts "{{yellow:Stack trace:}}" if ENV['DEBUG']
