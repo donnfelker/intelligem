@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 # CLI Tool development
-gem 'cli-kit', '~> 5.0.1'
-gem 'cli-ui', '~> 2.3.1'
+gem 'cli-kit', '~> 5.1.0'
+gem 'cli-ui', '~> 2.4.0'
 
 # Common LLM Interface
 gem "ruby_llm", "~> 1.3"

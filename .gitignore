@@ -1,1 +1,4 @@
 .env
+
+# Ignore everything in our tmp directory
+tmp/
