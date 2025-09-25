@@ -1,8 +1,6 @@
 # Intelligem
 
-A local coding agent, used to 'spark ideas'.
-
-A coding agent that can connect to a vast array of llms (openai, anthropic, gemini, deepseek, ollama and more).
+A local CLI agent written in Ruby that can be used for coding, analysis, etc.
 
 
 ## Setup
