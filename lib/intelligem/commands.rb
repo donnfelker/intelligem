@@ -2,7 +2,7 @@ require 'intelligem'
 
 module Intelligem
   module Commands
-    Registry = CLI::Kit::CommandRegistry.new(default: 'help')
+    Registry = CLI::Kit::CommandRegistry.new(default: 'agent')
 
     def self.register(const, cmd, path)
       autoload(const, path)

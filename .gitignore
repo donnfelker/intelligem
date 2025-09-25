@@ -1,4 +1,7 @@
 .env
 
+# Local settings
+settings.local.json
+
 # Ignore everything in our tmp directory
 tmp/
