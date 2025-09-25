@@ -18,4 +18,4 @@ group :test do
 end
 
 
-gem "reline", "~> 0.6.1"
+gem "reline", "~> 0.6.2"
