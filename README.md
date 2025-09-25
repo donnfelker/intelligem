@@ -20,7 +20,7 @@ ANTHROPIC_API_KEY=your-anthropic-api-key-here
 
 To start the cli, execute
 
-`./exe/shine agent`
+`./exe/shine`
 
 ### Help
 
