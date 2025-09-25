@@ -1,11 +1,12 @@
-# Intelligem
+# Shine
 
 A local CLI agent written in Ruby that can be used for coding, analysis, etc.
 
+Written in Ruby, this project aims to illustrate, once again ... how Ruby shines.
 
 ## Setup
 
-Before using Intelligem, you need to create a `.env` file in the project root directory with your API keys for the LLM providers you want to use.
+Before using Shine, you need to create a `.env` file in the project root directory with your API keys for the LLM providers you want to use.
 
 ### Example .env file
 
@@ -19,11 +20,11 @@ ANTHROPIC_API_KEY=your-anthropic-api-key-here
 
 To start the cli, execute
 
-`./exe/intelligem agent`
+`./exe/shine agent`
 
 ### Help
 
-`./exe/intelligem help` 
+`./exe/shine help` 
 
 ## Architecture
 
@@ -31,7 +32,7 @@ The application is built with Ruby and the Ruby LLM gem, powered via the CLI wit
 
 ### Tools
 
-The agent's tools are built using the Ruby LLM gem's tool system, which provides structured function calling capabilities to interact with the LLM. The tools are located in the `lib/intelligem/agent/tools/` directory.
+The agent's tools are built using the Ruby LLM gem's tool system, which provides structured function calling capabilities to interact with the LLM. The tools are located in the `lib/shine/agent/tools/` directory.
 
 Currently supported tools:
 - **Read File** - Read contents of files

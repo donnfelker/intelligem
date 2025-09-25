@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module Intelligem
+module Shine
   class ExampleTest < Minitest::Test
     include CLI::Kit::Support::TestHelper
 

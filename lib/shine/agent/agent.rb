@@ -5,7 +5,7 @@ require_relative "tools/edit_file"
 require_relative "tools/run_shell_command"
 require_relative "tools/fetch_url"
 
-module Intelligem
+module Shine
   module Agent
     class Agent
       def initialize
@@ -20,11 +20,11 @@ module Intelligem
         
 
         @chat = @chat.with_tools(
-          Intelligem::Agent::Tools::ReadFile,
-          Intelligem::Agent::Tools::ListFiles,
-          Intelligem::Agent::Tools::EditFile,
-          Intelligem::Agent::Tools::FetchUrl,
-          Intelligem::Agent::Tools::RunShellCommand
+          Shine::Agent::Tools::ReadFile,
+          Shine::Agent::Tools::ListFiles,
+          Shine::Agent::Tools::EditFile,
+          Shine::Agent::Tools::FetchUrl,
+          Shine::Agent::Tools::RunShellCommand
         )
 
         CLI::UI.puts "Chat with the agent. Type 'exit' to quit"

@@ -11,8 +11,8 @@ unshift_path.call('lib')
 
 require 'bundler/setup'
 require 'dotenv/load'
-require 'intelligem'
+require 'shine'
 
-exit(Intelligem::ErrorHandler.call do
-  Intelligem::EntryPoint.call(ARGV.dup)
+exit(Shine::ErrorHandler.call do
+  Shine::EntryPoint.call(ARGV.dup)
 end)

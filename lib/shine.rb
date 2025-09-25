@@ -3,13 +3,13 @@ require 'cli/kit'
 
 CLI::UI::StdoutRouter.enable
 
-module Intelligem
-  TOOL_NAME = 'intelligem'
+module Shine
+  TOOL_NAME = 'shine'
   ROOT      = File.expand_path('../..', __FILE__)
-  LOG_FILE  = '/tmp/intelligem.log'
+  LOG_FILE  = '/tmp/shine.log'
 
-  autoload(:EntryPoint, 'intelligem/entry_point')
-  autoload(:Commands,   'intelligem/commands')
+  autoload(:EntryPoint, 'shine/entry_point')
+  autoload(:Commands,   'shine/commands')
 
   Config = CLI::Kit::Config.new(tool_name: TOOL_NAME)
   Command = CLI::Kit::BaseCommand
@@ -17,7 +17,7 @@ module Intelligem
   Executor = CLI::Kit::Executor.new(log_file: LOG_FILE)
   Resolver = CLI::Kit::Resolver.new(
     tool_name: TOOL_NAME,
-    command_registry: Intelligem::Commands::Registry
+    command_registry: Shine::Commands::Registry
   )
 
   ErrorHandler = CLI::Kit::ErrorHandler.new(log_file: LOG_FILE)

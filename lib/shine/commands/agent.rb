@@ -1,10 +1,10 @@
-require 'intelligem'
+require 'shine'
 require 'ruby_llm'
 require_relative '../agent/agent'
 
-module Intelligem
+module Shine
   module Commands
-    class Agent < Intelligem::Command
+    class Agent < Shine::Command
       def call(_args, _name)
         api_key = ENV['ANTHROPIC_API_KEY']
 
@@ -25,12 +25,12 @@ module Intelligem
           config.default_model = 'claude-sonnet-4-20250514'
         end
 
-        agent = Intelligem::Agent::Agent.new
+        agent = Shine::Agent::Agent.new
         agent.run
       end
 
       def self.help
-        "Start the AI coding agent.\nUsage: {{command:#{Intelligem::TOOL_NAME} agent}}"
+        "Start the AI coding agent.\nUsage: {{command:#{Shine::TOOL_NAME} agent}}"
       end
     end
   end

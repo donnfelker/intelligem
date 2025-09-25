@@ -1,15 +1,15 @@
-require 'intelligem'
+require 'shine'
 
-module Intelligem
+module Shine
   module Commands
-    class Help < Intelligem::Command
+    class Help < Shine::Command
       def call(args, _name)
         puts CLI::UI.fmt("{{bold:Available commands}}")
         puts ""
 
-        Intelligem::Commands::Registry.resolved_commands.each do |name, klass|
+        Shine::Commands::Registry.resolved_commands.each do |name, klass|
           next if name == 'help'
-          puts CLI::UI.fmt("{{command:#{Intelligem::TOOL_NAME} #{name}}}")
+          puts CLI::UI.fmt("{{command:#{Shine::TOOL_NAME} #{name}}}")
           if help = klass.help
             puts CLI::UI.fmt(help)
           end

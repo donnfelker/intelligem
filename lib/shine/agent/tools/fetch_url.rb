@@ -2,7 +2,7 @@ require "ruby_llm/tool"
 require 'net/http'
 require 'uri'
 
-module Intelligem
+module Shine
   module Agent
     module Tools
       class FetchUrl < RubyLLM::Tool

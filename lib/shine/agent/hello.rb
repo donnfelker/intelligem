@@ -1,5 +1,5 @@
 
-module Intelligem
+module Shine
   module Agent
     class Hello
       def run 

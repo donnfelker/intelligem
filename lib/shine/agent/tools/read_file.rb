@@ -1,6 +1,6 @@
 require "ruby_llm/tool"
 
-module Intelligem
+module Shine
   module Agent
     module Tools
       class ReadFile < RubyLLM::Tool
