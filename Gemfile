@@ -5,7 +5,7 @@ gem 'cli-kit', '~> 5.1.0'
 gem 'cli-ui', '~> 2.4.0'
 
 # Common LLM Interface
-gem "ruby_llm", "~> 1.3"
+gem "ruby_llm", "~> 1.8"
 
 # Secrets
 gem "dotenv", "~> 3.1"
